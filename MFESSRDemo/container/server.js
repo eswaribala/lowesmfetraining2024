@@ -4,11 +4,6 @@ import path from 'path';
 import React from 'react';
 import { renderToPipeableStream } from 'react-dom/server';
 import App from './src/App';
-import loadable from '@loadable/component';
-
-//Dynamically load the MicroApp from the remote module
-//const Component1 = loadable(() => import('component1/Component1')); // This must match the 'exposes' path
-
 
 const app = express();
 
