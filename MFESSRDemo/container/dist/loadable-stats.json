@@ -1,5 +1,5 @@
 {
-  "hash": "b603b8784eae33ca4912",
+  "hash": "a5e950601cd8196b7952",
   "publicPath": "auto",
   "outputPath": "E:\\lowestraining2024\\MFESSRDemo\\container\\dist",
   "assetsByChunkName": {
@@ -10,8 +10,8 @@
   "assets": [
     {
       "type": "asset",
-      "name": "vendors-node_modules_css-loader_dist_runtime_api_js-node_modules_css-loader_dist_runtime_noSo-9238b7.js",
-      "size": 1186110,
+      "name": "vendors-node_modules_react-dom_index_js.js",
+      "size": 1081714,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -25,14 +25,35 @@
       "auxiliaryChunkNames": [],
       "auxiliaryChunkIdHints": [],
       "chunks": [
-        "vendors-node_modules_css-loader_dist_runtime_api_js-node_modules_css-loader_dist_runtime_noSo-9238b7"
+        "vendors-node_modules_react-dom_index_js"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "vendors-node_modules_react_index_js.js",
+      "size": 92009,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false
+      },
+      "chunkNames": [],
+      "chunkIdHints": [
+        "vendors"
+      ],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [
+        "vendors-node_modules_react_index_js"
       ],
       "auxiliaryChunks": []
     },
     {
       "type": "asset",
       "name": "main.js",
-      "size": 22680,
+      "size": 33630,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -53,7 +74,7 @@
     {
       "type": "asset",
       "name": "src_bootstrap_js.js",
-      "size": 17706,
+      "size": 10702,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -119,9 +140,19 @@
       ]
     },
     {
-      "id": "vendors-node_modules_css-loader_dist_runtime_api_js-node_modules_css-loader_dist_runtime_noSo-9238b7",
+      "id": "webpack_sharing_consume_default_react_react",
+      "files": []
+    },
+    {
+      "id": "vendors-node_modules_react_index_js",
       "files": [
-        "vendors-node_modules_css-loader_dist_runtime_api_js-node_modules_css-loader_dist_runtime_noSo-9238b7.js"
+        "vendors-node_modules_react_index_js.js"
+      ]
+    },
+    {
+      "id": "vendors-node_modules_react-dom_index_js",
+      "files": [
+        "vendors-node_modules_react-dom_index_js.js"
       ]
     }
   ]
