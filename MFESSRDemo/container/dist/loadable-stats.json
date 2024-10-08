@@ -1,16 +1,16 @@
 {
-  "hash": "d0938917ac571c72f5c2",
-  "publicPath": "auto",
+  "hash": "70ccd69d67ce6f8c8c9c",
+  "publicPath": "http://localhost:3004/",
   "outputPath": "E:\\lowestraining2024\\MFESSRDemo\\container\\dist",
   "assetsByChunkName": {
     "main": [
-      "main.js"
+      "bundle.js"
     ]
   },
   "assets": [
     {
       "type": "asset",
-      "name": "vendors-node_modules_react-dom_index_js.js",
+      "name": "vendors-node_modules_react-dom_index_js.bundle.js",
       "size": 1081719,
       "emitted": false,
       "comparedForEmit": false,
@@ -31,7 +31,7 @@
     },
     {
       "type": "asset",
-      "name": "vendors-node_modules_react_index_js.js",
+      "name": "vendors-node_modules_react_index_js.bundle.js",
       "size": 92009,
       "emitted": false,
       "comparedForEmit": false,
@@ -52,7 +52,7 @@
     },
     {
       "type": "asset",
-      "name": "vendors-node_modules_react-dom_client_js-node_modules_loadable_component_dist_esm_loadable_esm_mjs.js",
+      "name": "vendors-node_modules_react-dom_client_js-node_modules_loadable_component_dist_esm_loadable_esm_mjs.bundle.js",
       "size": 38370,
       "emitted": false,
       "comparedForEmit": false,
@@ -73,8 +73,8 @@
     },
     {
       "type": "asset",
-      "name": "main.js",
-      "size": 31494,
+      "name": "bundle.js",
+      "size": 29938,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -94,8 +94,8 @@
     },
     {
       "type": "asset",
-      "name": "src_bootstrap_js-webpack_sharing_consume_default_react-dom_react-dom-webpack_sharing_consume_-f8f6f9.js",
-      "size": 5769,
+      "name": "src_bootstrap_js-webpack_sharing_consume_default_react-dom_react-dom-webpack_sharing_consume_-f8f6f9.bundle.js",
+      "size": 5863,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -114,7 +114,7 @@
     {
       "type": "asset",
       "name": "index.html",
-      "size": 1016,
+      "size": 1040,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -135,7 +135,7 @@
       ],
       "assets": [
         {
-          "name": "main.js"
+          "name": "bundle.js"
         }
       ],
       "filteredAssets": 0,
@@ -151,13 +151,13 @@
     {
       "id": "main",
       "files": [
-        "main.js"
+        "bundle.js"
       ]
     },
     {
       "id": "src_bootstrap_js-webpack_sharing_consume_default_react-dom_react-dom-webpack_sharing_consume_-f8f6f9",
       "files": [
-        "src_bootstrap_js-webpack_sharing_consume_default_react-dom_react-dom-webpack_sharing_consume_-f8f6f9.js"
+        "src_bootstrap_js-webpack_sharing_consume_default_react-dom_react-dom-webpack_sharing_consume_-f8f6f9.bundle.js"
       ]
     },
     {
@@ -167,19 +167,19 @@
     {
       "id": "vendors-node_modules_react-dom_index_js",
       "files": [
-        "vendors-node_modules_react-dom_index_js.js"
+        "vendors-node_modules_react-dom_index_js.bundle.js"
       ]
     },
     {
       "id": "vendors-node_modules_react_index_js",
       "files": [
-        "vendors-node_modules_react_index_js.js"
+        "vendors-node_modules_react_index_js.bundle.js"
       ]
     },
     {
       "id": "vendors-node_modules_react-dom_client_js-node_modules_loadable_component_dist_esm_loadable_esm_mjs",
       "files": [
-        "vendors-node_modules_react-dom_client_js-node_modules_loadable_component_dist_esm_loadable_esm_mjs.js"
+        "vendors-node_modules_react-dom_client_js-node_modules_loadable_component_dist_esm_loadable_esm_mjs.bundle.js"
       ]
     }
   ]

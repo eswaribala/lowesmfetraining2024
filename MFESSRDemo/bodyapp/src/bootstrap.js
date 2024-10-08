@@ -9,7 +9,7 @@ const mount=()=> {
     root.render(
         <React.StrictMode>
 
-            <BodyComponent/>,
+            <BodyComponent/>
 
         </React.StrictMode>
     );

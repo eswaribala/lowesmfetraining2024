@@ -21,10 +21,8 @@ const devConfig = {
     new ModuleFederationPlugin({
       name: 'container',
       remotes:{
-        bodyComponent:'bodyComponent@http://localhost:3002/remoteEntry.js',
-        headerComponent:'headerComponent@http://localhost:3001/remoteEntry.js',
-        footerComponent:'footerComponent@http://localhost:3003/remoteEntry.js'
-
+        component1:'component1@http://localhost:3001/remoteEntry.js',
+        component2:'component2@http://localhost:3002/remoteEntry.js'
 
       },
 

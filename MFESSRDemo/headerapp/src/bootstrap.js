@@ -8,7 +8,7 @@ const mount=()=> {
     root.render(
         <React.StrictMode>
 
-            <HeaderComponent/>,
+            <HeaderComponent/>
 
         </React.StrictMode>
     );
