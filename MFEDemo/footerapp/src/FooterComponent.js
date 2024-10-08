@@ -11,7 +11,7 @@ export function FooterComponent(){
         let data=new Array();
         for(let i=0;i<5;i++){
 
-            data.push(new Branch(faker.number.int({min:1, max:3}),
+            data.push(new Branch(faker.number.int({min:1, max:100}),
                  faker.company.name(), faker.location.city())
                 );
 

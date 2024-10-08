@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import App from "./App";
 import HeaderComponent from "./HeaderComponent";
+
 //Mount function to start the app
-const root = ReactDOM.createRoot(document.getElementById('header-component'));
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const mount=()=> {
     root.render(
         <React.StrictMode>
 
-            <HeaderComponent/>,
+            <App/>,
 
         </React.StrictMode>
     );
