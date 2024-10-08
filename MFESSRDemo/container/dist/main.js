@@ -15,55 +15,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("Promise.all(/*! import() */[__webpack_require__.e(\"webpack_sharing_consume_default_react_react\"), __webpack_require__.e(\"src_bootstrap_js\")]).then(__webpack_require__.bind(__webpack_require__, /*! ./bootstrap */ \"./src/bootstrap.js\"));\n\n//# sourceURL=webpack://container/./src/index.js?");
-
-/***/ }),
-
-/***/ "webpack/container/reference/bodyComponent":
-/*!*********************************************************************!*\
-  !*** external "bodyComponent@http://localhost:3002/remoteEntry.js" ***!
-  \*********************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-var __webpack_error__ = new Error();
-module.exports = new Promise((resolve, reject) => {
-	if(typeof bodyComponent !== "undefined") return resolve();
-	__webpack_require__.l("http://localhost:3002/remoteEntry.js", (event) => {
-		if(typeof bodyComponent !== "undefined") return resolve();
-		var errorType = event && (event.type === 'load' ? 'missing' : event.type);
-		var realSrc = event && event.target && event.target.src;
-		__webpack_error__.message = 'Loading script failed.\n(' + errorType + ': ' + realSrc + ')';
-		__webpack_error__.name = 'ScriptExternalLoadError';
-		__webpack_error__.type = errorType;
-		__webpack_error__.request = realSrc;
-		reject(__webpack_error__);
-	}, "bodyComponent");
-}).then(() => (bodyComponent));
-
-/***/ }),
-
-/***/ "webpack/container/reference/footerComponent":
-/*!***********************************************************************!*\
-  !*** external "footerComponent@http://localhost:3003/remoteEntry.js" ***!
-  \***********************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-var __webpack_error__ = new Error();
-module.exports = new Promise((resolve, reject) => {
-	if(typeof footerComponent !== "undefined") return resolve();
-	__webpack_require__.l("http://localhost:3003/remoteEntry.js", (event) => {
-		if(typeof footerComponent !== "undefined") return resolve();
-		var errorType = event && (event.type === 'load' ? 'missing' : event.type);
-		var realSrc = event && event.target && event.target.src;
-		__webpack_error__.message = 'Loading script failed.\n(' + errorType + ': ' + realSrc + ')';
-		__webpack_error__.name = 'ScriptExternalLoadError';
-		__webpack_error__.type = errorType;
-		__webpack_error__.request = realSrc;
-		reject(__webpack_error__);
-	}, "footerComponent");
-}).then(() => (footerComponent));
+eval("Promise.all(/*! import() */[__webpack_require__.e(\"vendors-node_modules_react-dom_client_js-node_modules_loadable_component_dist_esm_loadable_esm_mjs\"), __webpack_require__.e(\"webpack_sharing_consume_default_react_react\"), __webpack_require__.e(\"src_bootstrap_js-webpack_sharing_consume_default_react-dom_react-dom-webpack_sharing_consume_-f8f6f9\")]).then(__webpack_require__.bind(__webpack_require__, /*! ./bootstrap */ \"./src/bootstrap.js\"));\n\n//# sourceURL=webpack://container/./src/index.js?");
 
 /***/ }),
 
@@ -259,10 +211,8 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 	/* webpack/runtime/remotes loading */
 /******/ 	(() => {
 /******/ 		var chunkMapping = {
-/******/ 			"src_bootstrap_js": [
-/******/ 				"webpack/container/remote/headerComponent/HeaderComponent",
-/******/ 				"webpack/container/remote/bodyComponent/BodyComponent",
-/******/ 				"webpack/container/remote/footerComponent/FooterComponent"
+/******/ 			"src_bootstrap_js-webpack_sharing_consume_default_react-dom_react-dom-webpack_sharing_consume_-f8f6f9": [
+/******/ 				"webpack/container/remote/headerComponent/HeaderComponent"
 /******/ 			]
 /******/ 		};
 /******/ 		var idToExternalAndNameMapping = {
@@ -270,16 +220,6 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 				"default",
 /******/ 				"./HeaderComponent",
 /******/ 				"webpack/container/reference/headerComponent"
-/******/ 			],
-/******/ 			"webpack/container/remote/bodyComponent/BodyComponent": [
-/******/ 				"default",
-/******/ 				"./BodyComponent",
-/******/ 				"webpack/container/reference/bodyComponent"
-/******/ 			],
-/******/ 			"webpack/container/remote/footerComponent/FooterComponent": [
-/******/ 				"default",
-/******/ 				"./FooterComponent",
-/******/ 				"webpack/container/reference/footerComponent"
 /******/ 			]
 /******/ 		};
 /******/ 		__webpack_require__.f.remotes = (chunkId, promises) => {
@@ -370,8 +310,6 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 				case "default": {
 /******/ 					register("react-dom", "18.3.1", () => (Promise.all([__webpack_require__.e("vendors-node_modules_react-dom_index_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react")]).then(() => (() => (__webpack_require__(/*! ./node_modules/react-dom/index.js */ "./node_modules/react-dom/index.js"))))));
 /******/ 					register("react", "18.3.1", () => (__webpack_require__.e("vendors-node_modules_react_index_js").then(() => (() => (__webpack_require__(/*! ./node_modules/react/index.js */ "./node_modules/react/index.js"))))));
-/******/ 					initExternal("webpack/container/reference/bodyComponent");
-/******/ 					initExternal("webpack/container/reference/footerComponent");
 /******/ 					initExternal("webpack/container/reference/headerComponent");
 /******/ 				}
 /******/ 				break;
@@ -529,16 +467,18 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 		});
 /******/ 		var installedModules = {};
 /******/ 		var moduleToHandlerMapping = {
-/******/ 			"webpack/sharing/consume/default/react/react": () => (loadSingletonVersion("default", "react", false, [1,18,3,1], () => (__webpack_require__.e("vendors-node_modules_react_index_js").then(() => (() => (__webpack_require__(/*! react */ "./node_modules/react/index.js"))))))),
-/******/ 			"webpack/sharing/consume/default/react-dom/react-dom": () => (loadSingleton("default", "react-dom", false, () => (__webpack_require__.e("vendors-node_modules_react-dom_index_js").then(() => (() => (__webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js")))))))
+/******/ 			"webpack/sharing/consume/default/react/react?c673": () => (loadSingletonVersion("default", "react", false, [1,18,3,1], () => (__webpack_require__.e("vendors-node_modules_react_index_js").then(() => (() => (__webpack_require__(/*! react */ "./node_modules/react/index.js"))))))),
+/******/ 			"webpack/sharing/consume/default/react-dom/react-dom": () => (loadSingleton("default", "react-dom", false, () => (__webpack_require__.e("vendors-node_modules_react-dom_index_js").then(() => (() => (__webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js"))))))),
+/******/ 			"webpack/sharing/consume/default/react/react?a9b6": () => (loadSingletonVersion("default", "react", false, [,[1,18,0,0],[1,17,0,0],[1,16,3,0],1,1], () => (__webpack_require__.e("vendors-node_modules_react_index_js").then(() => (() => (__webpack_require__(/*! react */ "./node_modules/react/index.js")))))))
 /******/ 		};
 /******/ 		// no consumes in initial chunks
 /******/ 		var chunkMapping = {
 /******/ 			"webpack_sharing_consume_default_react_react": [
-/******/ 				"webpack/sharing/consume/default/react/react"
+/******/ 				"webpack/sharing/consume/default/react/react?c673"
 /******/ 			],
-/******/ 			"src_bootstrap_js": [
-/******/ 				"webpack/sharing/consume/default/react-dom/react-dom"
+/******/ 			"src_bootstrap_js-webpack_sharing_consume_default_react-dom_react-dom-webpack_sharing_consume_-f8f6f9": [
+/******/ 				"webpack/sharing/consume/default/react-dom/react-dom",
+/******/ 				"webpack/sharing/consume/default/react/react?a9b6"
 /******/ 			]
 /******/ 		};
 /******/ 		var startedInstallModules = {};

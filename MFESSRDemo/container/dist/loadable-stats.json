@@ -1,5 +1,5 @@
 {
-  "hash": "a5e950601cd8196b7952",
+  "hash": "d0938917ac571c72f5c2",
   "publicPath": "auto",
   "outputPath": "E:\\lowestraining2024\\MFESSRDemo\\container\\dist",
   "assetsByChunkName": {
@@ -11,7 +11,7 @@
     {
       "type": "asset",
       "name": "vendors-node_modules_react-dom_index_js.js",
-      "size": 1081714,
+      "size": 1081719,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -52,8 +52,29 @@
     },
     {
       "type": "asset",
+      "name": "vendors-node_modules_react-dom_client_js-node_modules_loadable_component_dist_esm_loadable_esm_mjs.js",
+      "size": 38370,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false
+      },
+      "chunkNames": [],
+      "chunkIdHints": [
+        "vendors"
+      ],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [
+        "vendors-node_modules_react-dom_client_js-node_modules_loadable_component_dist_esm_loadable_esm_mjs"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
       "name": "main.js",
-      "size": 33630,
+      "size": 31494,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -73,8 +94,8 @@
     },
     {
       "type": "asset",
-      "name": "src_bootstrap_js.js",
-      "size": 10702,
+      "name": "src_bootstrap_js-webpack_sharing_consume_default_react-dom_react-dom-webpack_sharing_consume_-f8f6f9.js",
+      "size": 5769,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -86,14 +107,14 @@
       "auxiliaryChunkNames": [],
       "auxiliaryChunkIdHints": [],
       "chunks": [
-        "src_bootstrap_js"
+        "src_bootstrap_js-webpack_sharing_consume_default_react-dom_react-dom-webpack_sharing_consume_-f8f6f9"
       ],
       "auxiliaryChunks": []
     },
     {
       "type": "asset",
       "name": "index.html",
-      "size": 1758,
+      "size": 1016,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -134,14 +155,20 @@
       ]
     },
     {
-      "id": "src_bootstrap_js",
+      "id": "src_bootstrap_js-webpack_sharing_consume_default_react-dom_react-dom-webpack_sharing_consume_-f8f6f9",
       "files": [
-        "src_bootstrap_js.js"
+        "src_bootstrap_js-webpack_sharing_consume_default_react-dom_react-dom-webpack_sharing_consume_-f8f6f9.js"
       ]
     },
     {
       "id": "webpack_sharing_consume_default_react_react",
       "files": []
+    },
+    {
+      "id": "vendors-node_modules_react-dom_index_js",
+      "files": [
+        "vendors-node_modules_react-dom_index_js.js"
+      ]
     },
     {
       "id": "vendors-node_modules_react_index_js",
@@ -150,9 +177,9 @@
       ]
     },
     {
-      "id": "vendors-node_modules_react-dom_index_js",
+      "id": "vendors-node_modules_react-dom_client_js-node_modules_loadable_component_dist_esm_loadable_esm_mjs",
       "files": [
-        "vendors-node_modules_react-dom_index_js.js"
+        "vendors-node_modules_react-dom_client_js-node_modules_loadable_component_dist_esm_loadable_esm_mjs.js"
       ]
     }
   ]
