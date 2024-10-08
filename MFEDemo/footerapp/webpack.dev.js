@@ -6,17 +6,17 @@ const packageJson=require('./package.json')
 const devConfig = {
   mode: 'development',
   devServer: {
-    port: 3001,
+    port: 3003,
     historyApiFallback: {
       index: 'index.html',
     },
   },
   plugins: [
     new ModuleFederationPlugin({
-      name:'component1',
+      name:'footerComponent',
       filename:'remoteEntry.js',
       exposes:{
-        './Component1':'./src/bootstrap.js'
+        './FooterComponent':'./src/bootstrap.js'
       },
       shared:packageJson.dependencies
 

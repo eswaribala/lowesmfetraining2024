@@ -17,7 +17,7 @@
     "@faker-js/faker": "^9.0.3"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "webpack serve --config webpack.dev.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import {Branch} from "./Branch";
 import {faker} from '@faker-js/faker'
-function FooterComponent(){
+export function FooterComponent(){
     const [branches,setBranches]=useState([]);
     useEffect(() => {
          generateBranches();
