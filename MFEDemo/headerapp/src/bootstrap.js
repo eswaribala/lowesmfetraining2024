@@ -4,7 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import HeaderComponent from "./HeaderComponent";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('header-component'));
 root.render(
     <React.StrictMode>
        <HeaderComponent/>

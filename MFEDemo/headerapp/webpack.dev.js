@@ -13,10 +13,10 @@ const devConfig = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name:'component1',
+      name:'headerComponent',
       filename:'remoteEntry.js',
       exposes:{
-        './Component1':'./src/bootstrap.js'
+        './HeaderComponent':'./src/bootstrap.js'
       },
       shared:packageJson.dependencies
 
