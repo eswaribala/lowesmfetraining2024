@@ -21,6 +21,7 @@ function FooterComponent(){
 
     return(
         <div>
+            {
             (branches.length > 0) && (
                <ul>
                    {
@@ -37,6 +38,7 @@ function FooterComponent(){
                    }
                </ul>
             )
+            }
         </div>
         )
 }
