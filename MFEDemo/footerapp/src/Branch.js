@@ -1,4 +1,9 @@
 export class Branch{
+    constructor(branchId,branchName,city) {
+        this._branchId = branchId;
+        this._branchName = branchName;
+        this._city = city;
+    }
     get branchId() {
         return this._branchId;
     }
@@ -22,9 +27,5 @@ export class Branch{
     set city(value) {
         this._city = value;
     }
-    constructor(branchId,branchName,city) {
-        this._branchId = branchId;
-        this._branchName = branchName;
-        this._city = city;
-    }
+
 }
