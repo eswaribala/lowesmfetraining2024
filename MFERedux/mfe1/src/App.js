@@ -1,23 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import {useSelector} from "react-redux";
 
 function App() {
+  const data=useSelector((state)=>state.countries.data);
+  const status=useSelector((state)=>state.countries.status);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+          {status=='loading' &&
+              <p>Loading the Data ....</p>
+          }
+
+          {
+            status == 'error' &&
+                  <p>Data Error ....</p>
+          }
+
+          {
+            status == 'completed' &&
+
+                data.map(item=>{
+                  return(
+                      <p>{item.name}</p>
+                  )
+                })
+
+          }
+
     </div>
   );
 }
