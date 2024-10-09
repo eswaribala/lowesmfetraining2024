@@ -1,0 +1,30 @@
+.Home-header {
+    background-color: gold;
+
+    min-height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: left;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+.center{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: left;
+
+}
+.center h1{
+    font-size: x-large;
+}
+.Dashboard{
+    display: flex;
+    align-items: center;
+
+
+}
+.Account{
+    width: 20%;
+}
