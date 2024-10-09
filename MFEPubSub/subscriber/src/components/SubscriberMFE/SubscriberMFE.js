@@ -35,11 +35,10 @@ const SubscriberMFE = ({socket}) => {
         <div>
             <ul>
                 {
-                    messages.map(item=>{
-                        return(
-                            <li>{item}</li>
-                        )
-                    })
+
+                        messages.map((msg, index) => (
+                            <li key={index}>{msg}</li>
+                        ))
                 }
             </ul>
         </div>
