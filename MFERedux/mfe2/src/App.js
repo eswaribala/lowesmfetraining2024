@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <h2>MFE 2: Data Count</h2>
       {status === 'loading' && <p>Loading...</p>}
-      {status === 'succeeded' && <p>Total items: {data.length}</p>}
+      {status === 'completed' && <p>Total items: {data.length}</p>}
     </div>
   );
 }
