@@ -28,17 +28,6 @@ module.exports = {
         ]
       },
       {
-        test: /\.jpeg$/,
-        use: [
-          {
-            loader: 'file-loader?name=images/[name].[ext]',
-
-          }
-
-
-        ]
-      },
-      {
         test: /\.png$/,
         use: [
           {

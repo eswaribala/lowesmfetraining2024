@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react'
 import {Component, useState} from "react";
 import {Logo} from './components/logo/Logo'
 import {Timer} from './components/Timer/Timer'

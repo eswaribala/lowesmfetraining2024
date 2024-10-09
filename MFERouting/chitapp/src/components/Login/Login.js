@@ -40,10 +40,10 @@ function Login({...props}){
         onSubmit:function(values){
 
             // Check if CAPTCHA is solved
-            if (!captchaValue) {
+            /*if (!captchaValue) {
                 setErrorMessage("Please verify that you are not a robot.");
                 return;
-            }
+            }*/
             let data={
                 "email":values.email,
                 "password":values.password
@@ -142,10 +142,10 @@ function Login({...props}){
                     />
 
 
-                    <ReCAPTCHA
+                   {/* <ReCAPTCHA
                         sitekey={process.env.REACT_APP_SITE_KEY} // Replace this with your actual site key
                         onChange={handleCaptchaChange}
-                    />
+                    />*/}
                     {errorMessage && <p style={{color: "red"}}>{errorMessage}</p>}
                     {/* <CustomTextField id="captcha" label="captcha"/>*/}
                     <CustomButton text="Login" type="submit" color="success" variant="contained"></CustomButton>
