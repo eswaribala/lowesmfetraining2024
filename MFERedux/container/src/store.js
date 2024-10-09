@@ -3,7 +3,7 @@ import dataReducer from './dataslicer'
 
 const store=configureStore({
     reducer:{
-        data:dataReducer
+        countries:dataReducer
     }
 })
 
