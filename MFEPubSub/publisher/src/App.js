@@ -4,7 +4,7 @@ import {useEffect, useState} from "react";
 import PublishMFE from "./components/PublishMFE/PublishMFE";
 
 function App() {
-   const[socket,setSocket]=useState('');
+   const[socket,setSocket]=useState(null);
   useEffect(() => {
     const ws=new WebSocket("http://localhost:7078")
     ws.onopen = () => console.log('WebSocket connected');
@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Micro Frontend 1 - Publisher</h1>
+      <h1>Micro Frontend  - Publisher</h1>
       {socket ? <PublishMFE socket={socket} /> : <p>Connecting to WebSocket...</p>}
     </div>
   );

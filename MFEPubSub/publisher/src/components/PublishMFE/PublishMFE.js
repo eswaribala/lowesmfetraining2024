@@ -8,10 +8,12 @@ const PublishMFE = ({socket}) => {
 
     function handlePublish(){
        socket.send(JSON.stringify({type:'PUBLISH',data:JSON.stringify(message)}));
-    }
+       setMessage('');
+     }
    return (
-        <div className="PublishMFE">
-            <input type="text" value={message}
+        <div >
+            <h1>Enter Message To Publish</h1>
+            <input id="message" type="text" value={message}
                    onChange={(e)=>
                        setMessage(e.target.value)}/>
             <button onClick={handlePublish}>Publish Message</button>
