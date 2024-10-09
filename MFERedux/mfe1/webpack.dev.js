@@ -21,6 +21,9 @@ const devConfig = {
       exposes:{
         './App':'./src/App.js'
       },
+      remotes: {
+        container: "container@http://localhost:3000/remoteEntry.js", // Adjust with the actual URL of your host container
+      },
       shared:packageJson.dependencies,
       shared: {
         react: {

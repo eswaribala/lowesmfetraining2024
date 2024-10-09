@@ -11,9 +11,13 @@ const devConfig = {
       index: 'index.html',
     },
   },
+
   plugins: [
     new ModuleFederationPlugin({
       name: 'container',
+      exposes: {
+        "./store": "./src/store.js", // Exposing the store.js to be used by other MFEs
+      },
       remotes:{
         mfe1:'mfe1@http://localhost:3001/remoteEntry.js',
         mfe2:'mfe2@http://localhost:3002/remoteEntry.js'

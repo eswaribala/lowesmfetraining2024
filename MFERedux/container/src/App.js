@@ -11,7 +11,7 @@ function App() {
     dispatcher(getCountries());
   }, [dispatcher]);
   return (
-    <div className="App">
+    <div >
       <React.Suspense fallback="Loading Component 1...">
         <MFE1/>
       </React.Suspense>
