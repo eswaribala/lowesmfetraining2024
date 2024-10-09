@@ -10,6 +10,7 @@ const app = express();
 app.use(express.static(path.resolve(__dirname, 'dist')));
 
 app.get('*', (req, res) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
     const statsFile = path.resolve(__dirname, 'dist/loadable-stats.json');
     const extractor = new ChunkExtractor({ statsFile });
 

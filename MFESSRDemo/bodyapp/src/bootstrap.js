@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {BodyComponent} from "./BodyComponent";
+import BodyComponent from "./BodyComponent";
 
 //Mount function to start the app
 const root = ReactDOM.createRoot(document.getElementById('body-component'));

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {FooterComponent} from "./FooterComponent";
+import FooterComponent from "./FooterComponent";
 //Mount function to start the app
 const root = ReactDOM.createRoot(document.getElementById('footer-component'));
 

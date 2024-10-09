@@ -16,7 +16,7 @@ const devConfig = {
       name:'footerComponent',
       filename:'remoteEntry.js',
       exposes:{
-        './FooterComponent':'./src/bootstrap.js'
+        './FooterComponent':'./src/FooterComponent.js'
       },
       shared:packageJson.dependencies
 

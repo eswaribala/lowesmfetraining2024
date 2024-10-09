@@ -1,11 +1,11 @@
 import React from 'react'
 import BannerPath from './resources/images/lowesbanner.jpg'
-import './BodyComponent.css'
-export function BodyComponent(){
-
-    return(
+function bodyComponent() {
+    return (
         <div>
             <img src={BannerPath} className="banner"/>
         </div>
     )
 }
+
+export default bodyComponent

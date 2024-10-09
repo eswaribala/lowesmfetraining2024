@@ -16,7 +16,7 @@ const devConfig = {
       name:'bodyComponent',
       filename:'remoteEntry.js',
       exposes:{
-        './BodyComponent':'./src/bootstrap.js'
+        './BodyComponent':'./src/BodyComponent.js'
       },
       shared:packageJson.dependencies
 

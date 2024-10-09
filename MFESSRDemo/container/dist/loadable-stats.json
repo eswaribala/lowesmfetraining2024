@@ -1,5 +1,5 @@
 {
-  "hash": "70ccd69d67ce6f8c8c9c",
+  "hash": "fa0e8fdc725b791d58a1",
   "publicPath": "http://localhost:3004/",
   "outputPath": "E:\\lowestraining2024\\MFESSRDemo\\container\\dist",
   "assetsByChunkName": {
@@ -74,7 +74,7 @@
     {
       "type": "asset",
       "name": "bundle.js",
-      "size": 29938,
+      "size": 34526,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -95,7 +95,7 @@
     {
       "type": "asset",
       "name": "src_bootstrap_js-webpack_sharing_consume_default_react-dom_react-dom-webpack_sharing_consume_-f8f6f9.bundle.js",
-      "size": 5863,
+      "size": 8684,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -144,6 +144,45 @@
       "auxiliaryAssetsSize": 0,
       "children": {},
       "childAssets": {}
+    },
+    "headerComponent-HeaderComponent": {
+      "name": "headerComponent-HeaderComponent",
+      "chunks": [
+        "headerComponent-HeaderComponent"
+      ],
+      "assets": [],
+      "filteredAssets": 0,
+      "assetsSize": 0,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {}
+    },
+    "bodyComponent-BodyComponent": {
+      "name": "bodyComponent-BodyComponent",
+      "chunks": [
+        "bodyComponent-BodyComponent"
+      ],
+      "assets": [],
+      "filteredAssets": 0,
+      "assetsSize": 0,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {}
+    },
+    "footerComponent-FooterComponent": {
+      "name": "footerComponent-FooterComponent",
+      "chunks": [
+        "footerComponent-FooterComponent"
+      ],
+      "assets": [],
+      "filteredAssets": 0,
+      "assetsSize": 0,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {}
     }
   },
   "generator": "loadable-components",
@@ -169,6 +208,18 @@
       "files": [
         "vendors-node_modules_react-dom_index_js.bundle.js"
       ]
+    },
+    {
+      "id": "headerComponent-HeaderComponent",
+      "files": []
+    },
+    {
+      "id": "bodyComponent-BodyComponent",
+      "files": []
+    },
+    {
+      "id": "footerComponent-FooterComponent",
+      "files": []
     },
     {
       "id": "vendors-node_modules_react_index_js",

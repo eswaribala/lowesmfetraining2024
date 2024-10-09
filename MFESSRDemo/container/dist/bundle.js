@@ -19,6 +19,54 @@ eval("Promise.all(/*! import() */[__webpack_require__.e(\"vendors-node_modules_r
 
 /***/ }),
 
+/***/ "webpack/container/reference/bodyComponent":
+/*!*********************************************************************!*\
+  !*** external "bodyComponent@http://localhost:3002/remoteEntry.js" ***!
+  \*********************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+var __webpack_error__ = new Error();
+module.exports = new Promise((resolve, reject) => {
+	if(typeof bodyComponent !== "undefined") return resolve();
+	__webpack_require__.l("http://localhost:3002/remoteEntry.js", (event) => {
+		if(typeof bodyComponent !== "undefined") return resolve();
+		var errorType = event && (event.type === 'load' ? 'missing' : event.type);
+		var realSrc = event && event.target && event.target.src;
+		__webpack_error__.message = 'Loading script failed.\n(' + errorType + ': ' + realSrc + ')';
+		__webpack_error__.name = 'ScriptExternalLoadError';
+		__webpack_error__.type = errorType;
+		__webpack_error__.request = realSrc;
+		reject(__webpack_error__);
+	}, "bodyComponent");
+}).then(() => (bodyComponent));
+
+/***/ }),
+
+/***/ "webpack/container/reference/footerComponent":
+/*!***********************************************************************!*\
+  !*** external "footerComponent@http://localhost:3003/remoteEntry.js" ***!
+  \***********************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+var __webpack_error__ = new Error();
+module.exports = new Promise((resolve, reject) => {
+	if(typeof footerComponent !== "undefined") return resolve();
+	__webpack_require__.l("http://localhost:3003/remoteEntry.js", (event) => {
+		if(typeof footerComponent !== "undefined") return resolve();
+		var errorType = event && (event.type === 'load' ? 'missing' : event.type);
+		var realSrc = event && event.target && event.target.src;
+		__webpack_error__.message = 'Loading script failed.\n(' + errorType + ': ' + realSrc + ')';
+		__webpack_error__.name = 'ScriptExternalLoadError';
+		__webpack_error__.type = errorType;
+		__webpack_error__.request = realSrc;
+		reject(__webpack_error__);
+	}, "footerComponent");
+}).then(() => (footerComponent));
+
+/***/ }),
+
 /***/ "webpack/container/reference/headerComponent":
 /*!***********************************************************************!*\
   !*** external "headerComponent@http://localhost:3001/remoteEntry.js" ***!
@@ -88,6 +136,36 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 				() => (module);
 /******/ 			__webpack_require__.d(getter, { a: getter });
 /******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/create fake namespace object */
+/******/ 	(() => {
+/******/ 		var getProto = Object.getPrototypeOf ? (obj) => (Object.getPrototypeOf(obj)) : (obj) => (obj.__proto__);
+/******/ 		var leafPrototypes;
+/******/ 		// create a fake namespace object
+/******/ 		// mode & 1: value is a module id, require it
+/******/ 		// mode & 2: merge all properties of value into the ns
+/******/ 		// mode & 4: return value when already ns object
+/******/ 		// mode & 16: return value when it's Promise-like
+/******/ 		// mode & 8|1: behave like require
+/******/ 		__webpack_require__.t = function(value, mode) {
+/******/ 			if(mode & 1) value = this(value);
+/******/ 			if(mode & 8) return value;
+/******/ 			if(typeof value === 'object' && value) {
+/******/ 				if((mode & 4) && value.__esModule) return value;
+/******/ 				if((mode & 16) && typeof value.then === 'function') return value;
+/******/ 			}
+/******/ 			var ns = Object.create(null);
+/******/ 			__webpack_require__.r(ns);
+/******/ 			var def = {};
+/******/ 			leafPrototypes = leafPrototypes || [null, getProto({}), getProto([]), getProto(getProto)];
+/******/ 			for(var current = mode & 2 && value; typeof current == 'object' && !~leafPrototypes.indexOf(current); current = getProto(current)) {
+/******/ 				Object.getOwnPropertyNames(current).forEach((key) => (def[key] = () => (value[key])));
+/******/ 			}
+/******/ 			def['default'] = () => (value);
+/******/ 			__webpack_require__.d(ns, def);
+/******/ 			return ns;
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -199,8 +277,14 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 	/* webpack/runtime/remotes loading */
 /******/ 	(() => {
 /******/ 		var chunkMapping = {
-/******/ 			"src_bootstrap_js-webpack_sharing_consume_default_react-dom_react-dom-webpack_sharing_consume_-f8f6f9": [
+/******/ 			"headerComponent-HeaderComponent": [
 /******/ 				"webpack/container/remote/headerComponent/HeaderComponent"
+/******/ 			],
+/******/ 			"bodyComponent-BodyComponent": [
+/******/ 				"webpack/container/remote/bodyComponent/BodyComponent"
+/******/ 			],
+/******/ 			"footerComponent-FooterComponent": [
+/******/ 				"webpack/container/remote/footerComponent/FooterComponent"
 /******/ 			]
 /******/ 		};
 /******/ 		var idToExternalAndNameMapping = {
@@ -208,6 +292,16 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 				"default",
 /******/ 				"./HeaderComponent",
 /******/ 				"webpack/container/reference/headerComponent"
+/******/ 			],
+/******/ 			"webpack/container/remote/bodyComponent/BodyComponent": [
+/******/ 				"default",
+/******/ 				"./BodyComponent",
+/******/ 				"webpack/container/reference/bodyComponent"
+/******/ 			],
+/******/ 			"webpack/container/remote/footerComponent/FooterComponent": [
+/******/ 				"default",
+/******/ 				"./FooterComponent",
+/******/ 				"webpack/container/reference/footerComponent"
 /******/ 			]
 /******/ 		};
 /******/ 		__webpack_require__.f.remotes = (chunkId, promises) => {
@@ -299,6 +393,8 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 					register("react-dom", "18.3.1", () => (Promise.all([__webpack_require__.e("vendors-node_modules_react-dom_index_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react")]).then(() => (() => (__webpack_require__(/*! ./node_modules/react-dom/index.js */ "./node_modules/react-dom/index.js"))))));
 /******/ 					register("react", "18.3.1", () => (__webpack_require__.e("vendors-node_modules_react_index_js").then(() => (() => (__webpack_require__(/*! ./node_modules/react/index.js */ "./node_modules/react/index.js"))))));
 /******/ 					initExternal("webpack/container/reference/headerComponent");
+/******/ 					initExternal("webpack/container/reference/bodyComponent");
+/******/ 					initExternal("webpack/container/reference/footerComponent");
 /******/ 				}
 /******/ 				break;
 /******/ 			}
@@ -504,7 +600,7 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 					if(installedChunkData) {
 /******/ 						promises.push(installedChunkData[2]);
 /******/ 					} else {
-/******/ 						if("webpack_sharing_consume_default_react_react" != chunkId) {
+/******/ 						if(!/^(((footerComponent\-Foot|headerComponent\-Head)er|bodyComponent\-Body)Componen|webpack_sharing_consume_default_react_reac)t$/.test(chunkId)) {
 /******/ 							// setup Promise in chunk cache
 /******/ 							var promise = new Promise((resolve, reject) => (installedChunkData = installedChunks[chunkId] = [resolve, reject]));
 /******/ 							promises.push(installedChunkData[2] = promise);
@@ -578,7 +674,7 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 	
 /************************************************************************/
 /******/ 	
-/******/ 	// module cache are used so entry inlining is disabled
+/******/ 	// module factories are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
