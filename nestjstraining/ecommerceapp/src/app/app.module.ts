@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
+import { AppResolver } from './app.resolver';
 import { AppService } from './app.service';
 import { MongooseModule } from "@nestjs/mongoose";
 import { GraphQLModule } from "@nestjs/graphql";
@@ -12,11 +12,9 @@ import * as process from "process";
     GraphQLModule.forRoot({
       driver: ApolloDriver,  // Specify ApolloDriver here
       autoSchemaFile: join(process.cwd(),'src/schema.gql'),
-
-
     })
   ],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [],
+  providers: [AppService,AppResolver],
 })
 export class AppModule {}
