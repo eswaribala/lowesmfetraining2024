@@ -4,7 +4,7 @@ import { Model } from "mongoose";
 import { Injectable } from "@nestjs/common";
 import { Product } from "./product.schema";
 @Injectable()
-class ProductService{
+export class ProductService{
   constructor(@InjectModel(Product.name) private productModel: Model<Product>) {}
 
   async findAll(): Promise<Product[]> {
