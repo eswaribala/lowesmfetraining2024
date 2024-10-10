@@ -4,7 +4,7 @@ import { InjectModel } from "@nestjs/mongoose";
 import { Catalog } from "./catalog.schema";
 
 @Injectable()
-class CatalogService{
+export class CatalogService{
 
   constructor(@InjectModel(Catalog.name) private catalogModel: Model<Catalog>) {}
 

@@ -1,7 +1,7 @@
 import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 
 @Schema()
-class Product extends Document{
+export class Product extends Document{
   @Prop()
   productId:bigint;
   @Prop()
