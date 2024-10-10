@@ -15,7 +15,8 @@ type ProductType {
 
 type Query {
   getHello: String!
-  catalogs: [ProductType!]!
+  catalogs: [CatalogType!]!
+  products: [ProductType!]!
 }
 
 type Mutation {

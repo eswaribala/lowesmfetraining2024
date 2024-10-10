@@ -11,7 +11,7 @@ export class ProductResolver{
   constructor(private productService:ProductService) {
   }
   @Query(() => [ProductType])
-  async catalogs() {
+  async products() {
     return this.productService.findAll();
   }
 
